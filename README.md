@@ -12,36 +12,22 @@ dxlsfq/
 ├── styles.css          # 样式文件
 ├── script.js           # 交互逻辑
 ├── README.md           # 说明文档
+├── .github/
+│   └── workflows/
+│       └── pages.yml   # GitHub Actions 自动部署
 ├── audio/              # 音频文件
 │   ├── bg.mp3          # 背景音乐
 │   └── README.md       # 音频说明
 └── images/             # 产品图片
     ├── wechat.jpg      # 微信二维码
-    ├── foxiang/        # 佛像类 (1.png - 15.png)
-    ├── tongzhong/      # 铜钟类 (1.png - 4.png)
-    ├── xianglu/        # 香炉类 (1.png - 4.png)
-    ├── baoding/        # 宝鼎类 (1.png - 3.png)
-    ├── paibian/        # 牌匾类 (1.png - 3.png)
-    ├── muyu/           # 木鱼类 (1.png)
-    └── nianzhu/        # 念珠类 (1.png)
+    ├── foxiang/        # 佛像类
+    ├── tongzhong/      # 铜钟类
+    ├── xianglu/        # 香炉类
+    ├── baoding/        # 宝鼎类
+    ├── paibian/        # 牌匾类
+    ├── muyu/           # 木鱼类
+    └── nianzhu/        # 念珠类
 ```
-
----
-
-## 快速开始
-
-### 本地预览
-
-双击 `index.html` 即可在浏览器中预览
-
-### 部署到 GitHub Pages
-
-1. 推送代码到 GitHub 仓库
-2. 启用 GitHub Pages（Settings → Pages）
-3. 选择分支（如 `main`）和文件夹（`/ (root)`）
-4. 访问 `https://你的用户名.github.io/dxlsfq/`
-
-本项目已配置为支持子目录部署，所有资源路径均为相对路径。
 
 ---
 
@@ -64,15 +50,15 @@ dxlsfq/
 
 ```javascript
 const siteConfig = {
-    name: '李释佛器',           // 网站名称
-    tagline: '匠心铸就 · 庄严殊胜',  // 副标题
-    description: '专业供奉佛像、法器、香道用品',
-    footer: '李释佛器 · 广结善缘',  // 页脚文字
-    copyrightYear: 2026,         // 版权年份
-    contact: {
-        phone: '13627947766',    // 联系电话
-        address: '地址'          // 联系地址
-    }
+  name: "李释佛器", // 网站名称
+  tagline: "匠心铸就 · 庄严殊胜", // 副标题
+  description: "专业供奉佛像、法器、香道用品",
+  footer: "李释佛器 · 广结善缘", // 页脚文字
+  copyrightYear: 2026, // 版权年份
+  contact: {
+    phone: "13627947766", // 联系电话
+    address: "地址", // 联系地址
+  },
 };
 ```
 
@@ -86,9 +72,9 @@ const siteConfig = {
 
 ```javascript
 const categories = [
-    { id: 'foxiang', name: '佛像', imageCount: 15 },
-    { id: 'tongzhong', name: '铜钟', imageCount: 4 },
-    // ... 更多分类
+  { id: "foxiang", name: "佛像", imageCount: 15 },
+  { id: "tongzhong", name: "铜钟", imageCount: 4 },
+  // ... 更多分类
 ];
 ```
 
@@ -131,13 +117,13 @@ const categories = [
 
 ```css
 :root {
-    --primary-gold: #D4AF37;      /* 主金色 */
-    --primary-dark: #1a1a2e;      /* 深色背景 */
-    --primary-red: #8B2332;       /* 红色点缀 */
-    --text-light: #f5f5f5;        /* 浅色文字 */
-    --text-dark: #333;            /* 深色文字 */
-    --bg-light: #faf8f5;          /* 浅色背景 */
-    --bg-card: #ffffff;           /* 卡片背景 */
+  --primary-gold: #d4af37; /* 主金色 */
+  --primary-dark: #1a1a2e; /* 深色背景 */
+  --primary-red: #8b2332; /* 红色点缀 */
+  --text-light: #f5f5f5; /* 浅色文字 */
+  --text-dark: #333; /* 深色文字 */
+  --bg-light: #faf8f5; /* 浅色背景 */
+  --bg-card: #ffffff; /* 卡片背景 */
 }
 ```
 
@@ -159,31 +145,18 @@ const categories = [
 
 ---
 
-## 产品统计
-
-| 分类 | 图片数量 | 文件夹 |
-|------|---------|--------|
-| 佛像 | 15 | `images/foxiang/` |
-| 铜钟 | 4 | `images/tongzhong/` |
-| 香炉 | 4 | `images/xianglu/` |
-| 宝鼎 | 3 | `images/baoding/` |
-| 牌匾 | 3 | `images/paibian/` |
-| 木鱼 | 1 | `images/muyu/` |
-| 念珠 | 1 | `images/nianzhu/` |
-
-**总计**: 31 个产品
-
----
-
 ## 常见问题
 
 ### Q: 图片不显示？
+
 A: 检查图片路径和文件名是否正确，确保从 1 开始连续命名。
 
 ### Q: 音乐不播放？
+
 A: 浏览器限制自动播放，点击页面任意位置或点击 🎵 按钮。
 
 ### Q: 如何添加新分类？
+
 A: 在 `categories` 数组添加新分类，创建对应文件夹，放入图片。
 
 ---
@@ -196,13 +169,6 @@ A: 在 `categories` 数组添加新分类，创建对应文件夹，放入图片
   - 图片放大功能
   - 背景音乐
   - 联系信息
-
----
-
-## 联系信息
-
-- **电话/微信**: 13627947766
-- **地址**: 江西省抚州市东乡区经济开发区
 
 ---
 

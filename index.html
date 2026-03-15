@@ -1,129 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="./">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="./" />
     <title id="siteTitle">网站名称</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <!-- 导航栏 -->
     <nav class="navbar">
-        <div class="nav-brand" id="navBrand">网站名称</div>
-        <button class="nav-toggle" id="navToggle">☰</button>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#home">首页</a></li>
-            <li><a href="#products">产品</a></li>
-            <li><a href="#about">关于</a></li>
-            <li><a href="#contact">联系</a></li>
-        </ul>
+      <div class="nav-brand" id="navBrand">网站名称</div>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#products">产品</a></li>
+        <li><a href="#about">关于</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
     </nav>
 
     <!-- 首页横幅 -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 id="siteName">网站名称</h1>
-            <p class="hero-subtitle" id="siteTagline">副标题</p>
-            <p class="hero-desc" id="siteDescription">网站描述</p>
-            <a href="#products" class="btn-primary">浏览产品</a>
-        </div>
+      <div class="hero-content">
+        <h1 id="siteName">网站名称</h1>
+        <p class="hero-subtitle" id="siteTagline">副标题</p>
+        <p class="hero-desc" id="siteDescription">网站描述</p>
+        <a href="#products" class="btn-primary">浏览产品</a>
+      </div>
     </section>
 
     <!-- 产品分类 -->
     <section id="products" class="products">
-        <h2 class="section-title">产品分类</h2>
-        <div class="category-tabs" id="categoryTabs">
-            <!-- 分类标签由 JS 动态生成 -->
-        </div>
+      <h2 class="section-title">产品分类</h2>
+      <div class="category-tabs" id="categoryTabs">
+        <!-- 分类标签由 JS 动态生成 -->
+      </div>
 
-        <div class="product-grid" id="productGrid">
-            <!-- 产品卡片由 JS 动态生成 -->
-        </div>
+      <div class="product-grid" id="productGrid">
+        <!-- 产品卡片由 JS 动态生成 -->
+      </div>
     </section>
 
     <!-- 关于我们 -->
     <section id="about" class="about">
-        <h2 class="section-title">关于我们</h2>
-        <div class="about-content">
-            <div class="about-card">
-                <span class="icon">🙏</span>
-                <h3>匠心工艺</h3>
-                <p>每件产品均由资深工匠精心制作，传承千年工艺</p>
-            </div>
-            <div class="about-card">
-                <span class="icon">✨</span>
-                <h3>精选材质</h3>
-                <p>选用优质铜、木、石等天然材料，庄严耐用</p>
-            </div>
-            <div class="about-card">
-                <span class="icon">🚚</span>
-                <h3>全国配送</h3>
-                <p>安全包装，快速配送，让佛缘遍布各地</p>
-            </div>
+      <h2 class="section-title">关于我们</h2>
+      <div class="about-content">
+        <div class="about-card">
+          <span class="icon">🙏</span>
+          <h3>匠心工艺</h3>
+          <p>每件产品均由资深工匠精心制作，传承千年工艺</p>
         </div>
+        <div class="about-card">
+          <span class="icon">✨</span>
+          <h3>精选材质</h3>
+          <p>选用优质铜、木、石等天然材料，庄严耐用</p>
+        </div>
+        <div class="about-card">
+          <span class="icon">🚚</span>
+          <h3>全国配送</h3>
+          <p>安全包装，快速配送，让佛缘遍布各地</p>
+        </div>
+      </div>
     </section>
 
     <!-- 联系方式 -->
     <section id="contact" class="contact">
-        <h2 class="section-title">联系我们</h2>
-        <div class="contact-card">
-            <div class="contact-row">
-                <span class="contact-icon">📱</span>
-                <div class="contact-info">
-                    <h4>电话</h4>
-                    <p id="contactPhone">电话号码</p>
-                </div>
-            </div>
-            <div class="contact-divider"></div>
-            <div class="contact-row">
-                <span class="contact-icon">💬</span>
-                <div class="contact-info">
-                    <h4>微信</h4>
-                    <img src="images/wechat.jpg" alt="微信二维码" class="wechat-qr">
-                </div>
-            </div>
-            <div class="contact-divider"></div>
-            <div class="contact-row">
-                <span class="contact-icon">📍</span>
-                <div class="contact-info">
-                    <h4>地址</h4>
-                    <p id="contactAddress">地址</p>
-                </div>
-            </div>
+      <h2 class="section-title">联系我们</h2>
+      <div class="contact-card">
+        <div class="contact-row">
+          <span class="contact-icon">📱</span>
+          <div class="contact-info">
+            <h4>电话</h4>
+            <p id="contactPhone">电话号码</p>
+          </div>
         </div>
+        <div class="contact-divider"></div>
+        <div class="contact-row">
+          <span class="contact-icon">💬</span>
+          <div class="contact-info">
+            <h4>微信</h4>
+            <img src="images/wechat.jpg" alt="微信二维码" class="wechat-qr" />
+          </div>
+        </div>
+        <div class="contact-divider"></div>
+        <div class="contact-row">
+          <span class="contact-icon">📍</span>
+          <div class="contact-info">
+            <h4>地址</h4>
+            <p id="contactAddress">地址</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 背景音乐 -->
     <audio id="bgMusic" loop>
-        <source src="audio/bg.mp3" type="audio/mpeg">
+      <source src="audio/bg.mp3" type="audio/mpeg" />
     </audio>
 
     <!-- 背景音乐控制 -->
     <button class="music-control" id="musicControl" title="播放背景音乐">
-        <span class="music-icon">♫</span>
+      <span class="music-icon">♫</span>
     </button>
 
     <!-- 页脚 -->
     <footer class="footer">
-        <p id="siteFooter">页脚文字</p>
-        <p class="copyright" id="siteCopyright">版权信息</p>
+      <p id="siteFooter">页脚文字</p>
+      <p class="copyright" id="siteCopyright">版权信息</p>
     </footer>
 
     <!-- 图片放大弹窗 -->
     <div class="lightbox" id="lightbox">
-        <div class="lightbox-content">
-            <button class="lightbox-close" id="lightboxClose">×</button>
-            <button class="lightbox-nav lightbox-prev" id="lightboxPrev">❮</button>
-            <img id="lightboxImg" src="" alt="">
-            <button class="lightbox-nav lightbox-next" id="lightboxNext">❯</button>
-            <div class="lightbox-caption" id="lightboxCaption"></div>
-        </div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose">×</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">❮</button>
+        <img id="lightboxImg" src="" alt="" />
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">❯</button>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
